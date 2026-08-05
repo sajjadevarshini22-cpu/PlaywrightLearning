@@ -5,5 +5,7 @@ test('Click get started', async({page})=>{
 
     await page.getByRole('link',{name:'Get started'}).click();
 
-    await expect(page).toHaveURL(/.*intro/);
+    await expect(page).toHaveURL('Playwright');
+
+    await page.getByRole
 });
